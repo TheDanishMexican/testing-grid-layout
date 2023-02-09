@@ -1,0 +1,37 @@
+h1 {
+  color: black;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+main {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav article aside"
+    "footer footer footer";
+  grid-template-rows: 25vh 50vh 25vh;
+}
+header {
+  grid-area: header;
+  background-color: aqua;
+}
+nav {
+  grid-area: nav;
+  background-color: aquamarine;
+}
+article {
+  grid-area: article;
+  background-color: brown;
+}
+aside {
+  grid-area: aside;
+  background-color: aquamarine;
+}
+footer {
+  grid-area: footer;
+  background-color: rgb(0, 170, 255);
+}
